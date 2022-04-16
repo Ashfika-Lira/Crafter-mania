@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>craftermania</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./media/company_Logo.jfif">
+
+    <!-- All Style start -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,900;1,300&display=swap');
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            list-style: none;
+        }
+
+        /* header */
+        .header-image {
+            text-align: center;
+            padding: 1rem 0;
+            box-shadow: 0px 15px 10px -15px gray;
+        }
+
+        .header-image img {
+            height: 100px;
+        }
+
+
+        /* ===============main=========== */
+        main {
+            padding: 0 20%;
+            background-color: rgb(221, 221, 221);
+        }
+
+        /* =============common class start============= */
+        .container-warp {
+            padding: 1rem 0;
+        }
+
+        .container {
+            background: white;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .container-shipping {
+            padding: 1rem .5rem;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            color: #383838;
+            text-align: start;
+        }
+
+        .product-tittle {
+            background: #7579E7;
+            border-radius: 10px 10px 0 0;
+            padding: .5rem 0;
+            color: white;
+        }
+
+        .container-warp .product-img img {
+            width: 50%;
+            margin: 1rem .5rem;
+        }
+
+        .text-gray {
+            color: #383838;
+            padding-top: 1rem;
+            text-align: start;
+        }
+
+        /* =============common class End============= */
+
+
+
+        /* ==================Description start =========*/
+        .container-description {
+            background: white;
+            border-radius: 10px;
+        }
+
+        .container-description .product-tittle h2 {
+            text-align: center;
+        }
+
+        .container-description .product-content p {
+            padding-bottom: 1rem;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container-description .product-content ul li {
+            list-style: none;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            color: #383838;
+        }
+
+        .container-description .product-content {
+            padding: 1rem;
+        }
+
+        /* ==================Description end =========*/
+
+        /* ---------payment section start------------ */
+        .container-warp .container .product-img {
+            padding: 1rem .5rem;
+            font-size: 14px;
+            font-family: 'Roboto', sans-serif;
+            color: #383838;
+            text-align: center;
+        }
+
+        .paypal-img img {
+            width: 50% !important;
+        }
+
+        /*============ Review section start========= */
+        .star-content-top-warp {
+            padding: 1rem;
+            margin: 1rem;
+            -moz-box-shadow: inset 0 0 10px #ccc;
+            -webkit-box-shadow: inset 0 0 10px #ccc;
+            box-shadow: inset 0 0 10px #ccc;
+        }
+
+        .review-box h3 {
+            color: #E60965;
+            font-style: italic;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+        }
+
+        .star-content-warp {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .star-content-warp .star-icons img {
+            width: 120px;
+        }
+
+        .please-note {
+            color: #FA1616;
+            font-size: 18px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        /* ==========Review section end========== */
+
+        .herm-img {
+            text-align: start;
+            padding: 10px;
+        }
+
+        .herm-img img {
+            width: 30%;
+        }
+
+        .grid-img-warp {
+            width: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grid-img-warp img {
+            width: 85%;
+            padding-bottom: 1rem;
+        }
+
+        /* shipping section start */
+        .herm-warp {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .herm-warp .herm-img img {
+            width: 150px;
+            border-radius: 10px;
+        }
+
+        /* shipping section end */
+
+        /* ===================footer ==================*/
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        footer strong {
+            color: #7579E7;
+        }
+
+
+        /* --------------Responsive----------- */
+        @media screen and (max-width: 768px) {
+            main {
+                padding: 0 5%;
+            }
+
+            .container-warp .product-img img {
+                width: 80%;
+            }
+
+            .grid-img-warp {
+                width: 80%;
+            }
+
+            .container-warp .container .product-img p {
+                font-size: 14px;
+                font-family: 'Roboto', sans-serif;
+                text-align: start;
+            }
+
+            .container-description .product-content ul li {
+                font-size: 14px;
+                font-family: 'Roboto', sans-serif;
+                text-align: start;
+            }
+
+            .review-box h3 {
+                font-size: 18px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .cushion {
+                font-size: 18px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .star-content-warp .star-icons img {
+                width: 100px;
+            }
+
+            .paypal-img img {
+                width: 80% !important;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            svg {
+                height: 15px;
+                width: 15px;
+            }
+
+            .container-warp .container .product-img p strong {
+                font-size: 14px;
+                font-family: 'Roboto', sans-serif;
+            }
+
+            .star-content-warp .star-icons img {
+                width: 60px;
+            }
+
+            .paypal-img img {
+                width: 90% !important;
+            }
+
+            footer {
+                font-size: 14px;
+            }
+        }
+    </style>
+    <!-- All Style End -->
+</head>
+
+<body>
+    <!-- -------------Header---------- -->
+    <header>
+        <div class="header-image">
+            <img src="https://i.ibb.co/X4rP6gq/logo.jpg" alt="company_Logo">
+        </div>
+    </header>
+
+    <main>
+        <div class="main-container">
+            <!-- Product -->
+            <section class="container-warp">
+                <div class="container">
+                    <div class="product-tittle">
+                        <h2>CRAFTER MANIA </h2>
+                    </div>
+                    <div class="product-img">
+                        <img src="https://i.ibb.co/d2Tgrs6/66-1.jpg" alt="product">
+                    </div>
+
+                    <div class="grid-img-warp">
+                        <div>
+                            <img src="https://i.ibb.co/PjQFd6j/66-2.jpg" alt="one">
+                        </div>
+                        <div>
+                            <img src="https://i.ibb.co/5YzZgVR/66-3.jpg" alt="two">
+                        </div>
+                        <div>
+                            <img src="https://i.ibb.co/8gM4WPx/66-4.jpg" alt="three">
+                        </div>
+                        <div>
+                            <img src="https://i.ibb.co/Wk7XP7r/66-5.jpg" alt="four">
+                        </div>
+                        <div>
+                            <img src="https://i.ibb.co/jDHbDb3/66-6.jpg" alt="five">
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- item description -->
+            <section class="container-warp">
+                <div class="container-description">
+                    <div class="product-tittle">
+                        <h2>Main Description</h2>
+                    </div>
+                    <div class="product-content">
+                        <p class="text-gray">Dumfries Tweed-Like fabric is very popular fabric in fact you may be familiar with the cloth design as you may own a few pieces in your home. Dumfries fabric can be used for upholstery, sofas, beds, cushions, curtains, draping, table cloths, fashion or displays. 
+							This versatile fabric can also be used to create fashionable accessories such as hairbands and scrunchies and is ideal for use around the home for items such as cushions, curtains, pillows and throws and is excellent value for money.
+                        </p>
+
+                        <h3 class="cushion">Dumfries Tweed-Like Fabric Features:
+                        </h3>
+
+                        <ul>
+                            <li>✅Beautifully Soft, Flexible texture, Easy to Cut, Sew and Apply on Upholstery Projects.
+                            </li>
+                            <li>✅Perfectly ideal for Furnishing and Upholstery Projects including Curtains, Cushions, Sofas, Cars and Many More Things.</li>
+                            <li>✅This Material is Hard Wearing, Woollen Woven Weave.</li>
+                            <li>✅Backing is Slightly Rough </li>
+
+
+                            <li>✅Machine Washable
+
+                            </li>
+                            <li>✅Fabric Thickness: 1.04mm approximately
+							</li>
+                            <li>✅Fabric Width: 147CM / 58” Approximately.
+							</li>
+                            <li>✅Length: Please Choose From The Drop Down Menu. if the required quantity is not available then please message us through eBay
+                            </li>
+
+
+                            <li>✅Available In Full Metre/s and Sample. All Multiple Purchases e.g. Full Metres will be Supplied in One Continuous Length apart from Fabric Sample. However if the Required Quantity Exceeds the Roll Size Then we will Inform you Prior to Sending. 
+
+                            </li>
+
+
+                        </ul><br>
+
+
+
+                        <p class="text-gray">
+                            Fabric Samples are available if you are unsure of the colour and want an exact colour match
+                            for Only £0.99 and you can request up to any 3 colours for free.
+                        </p>
+
+                        <h3 class="please-note">Please Note</h3>
+                        <ul>
+                            <li>✅ All orders are Cut Direct from Rolls for you so Please Make Use of the Samples Provided to avoid unnecessary hassle of Returns. Once the fabric is cut it is Very Difficult to resell to others as they are cut in size Just For You. </li>
+                            <li>✅ Although all pictures have been taken with extra care to ensure the exact colour and design of the fabric is shown, the Pictures may not show the exact colour due to light also lighting may slightly vary on different screens.  </li>
+                            <li>✅ Purchasing longer fabric may increase the chance of a fault being within the piece. On rear occasion, if this does occur then we will supply you with an extra half a metre at the end.  </li>
+                        </ul>
+
+
+                        <p class="text-gray">(Visit our other listings; We can make matching colour material Valance
+                            covers, Headboard covers, Curtains, Bed Runners, Table Runners, Rectangle Cushion covers and
+                            3D Style Box Cushions covers). To ensure the material colour shade matches exactly, please
+                            purchase all items in one transaction as the shade of the fabric can vary slightly from one
+                            batch to another.
+                        </p>
+
+
+                    </div>
+                </div>
+            </section>
+            <!-- payment description -->
+            <section class="container-warp">
+                <div class="container">
+                    <div class="product-tittle">
+                        <h2>PAYMENT</h2>
+                    </div>
+                    <div class="product-img">
+                        <p style="text-align: center; font-size: 18px; margin: 10px 0; font-weight: bold;">We accept
+                            payment through PAYPAL
+                        </p>
+                        <div class="paypal-img">
+                            <img src="https://i.ibb.co/fNDV2Xq/payment.png" alt="payment_photo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- SHIPPING -->
+            <section class="container-warp">
+                <div class="container">
+                    <div class="product-tittle">
+                        <h2>SHIPPING</h2>
+                    </div>
+                    <div class="container-shipping">
+                        <ul>
+                            <li>✅ Fast Dispatch and Next Day Tracked Delivery! </li>
+                            <li>✅ We aim to dispatch within 1-3 working days of payments being cleared. </li>
+                            <li>✅All orders will be delivered via Hermes Next Day 1-2 working days however if your area
+                                is
+                                not covered by Hermes Next Day then we will send via Royal Mail 2nd Class Signed For.
+                                Hermes
+                                tracking details will be sent to you via email. </li>
+                            <li>✅ Royal Mail 1st and 2nd class delivery service is also available in the delivery
+                                options.
+                            </li>
+                            <li>✅ All samples will be sent with 1st class stamp for speedy delivery.
+                            </li>
+                        </ul><br>
+
+                        <h3 class="please-note">Please Note</h3>
+                        <ul>
+                            <li> ✅ All orders are dispatched on working days (Monday to Friday), by this we exclude
+                                Saturdays, Sundays and Bank Holidays.
+                            <li> ✅ On rare occasion if your parcel is not delivered within 7 days from when its been
+                                dispatched then please contact us to let us know via eBay messages so we can locate
+                                it for you immediately.
+                            </li>
+                            <li> ✅ Always check your item on arrival to see if it is damaged, on rare occasions if
+                                it is damaged then please inform us via eBay messages so we can help you as soon as
+                                possible.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="herm-warp">
+                        <div class="herm-img">
+                            <img src="https://i.ibb.co/N6055GX/herom-real-image-photoshop.png" alt="hermes">
+                        </div>
+                        <div class="herm-img">
+                            <img src="https://i.ibb.co/JQtSNrw/roymail-main.jpg" alt="hermes">
+                        </div>
+                    </div>
+
+                </div>
+        </div>
+
+        <!-- return -->
+        <div class="container-warp">
+            <div class="container">
+                <div class="product-tittle">
+                    <h2>RETURN POLICY</h2>
+                </div>
+                <div class="container-shipping">
+                    <ul>
+                        <li>✅ We accept returns and exchanges!</li>
+                        <li>✅ We want you to be 100% happy with your purchase! If you are not completely satisfied
+                            with your purchased item, let us know and we will work with you to make it right. Please
+                            note: due to handmade nature of our products, there may be slight variations and
+                            imperfections in some items. We believe this is one of the most beautiful things about
+                            owning a handmade item.
+                        </li>
+                        <li>✅ In the unlikely event of the item being incorrect or damaged please inform us within
+                            72 hours (3 days) before leaving feedback, so we can make it right. For a full refund
+                            the item must be returned to us unused and unopened within 7 days from the date you
+                            received the item in its original packaging. You have a duty to take reasonable care of
+                            the items until we receive them back.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- about us -->
+        <section class="container-warp">
+            <div class="container">
+                <div class="product-tittle">
+                    <h2>ABOUT US </h2>
+                </div>
+                <div class="container-shipping">
+                    <p>We are a small family business who are dedicated to bringing you the best products to
+                        brighten and add a touch of glamour and sophistication to any room of your home. We stock
+                        all contemporary stylish high quality fabrics direct from manufacturers to ensure all our
+                        consumers get a modern look for their home. All orders are made to highest standards,
+                        handcrafted with the finest quality fabrics ensuring a neat finish. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEED BACK -->
+        <section class="container-warp">
+            <div class="container">
+                <div class="product-tittle">
+                    <h2>FEEDBACK</h2>
+                </div>
+                <div class="product-img">
+                    <div class="review-box">
+                        <h3>If you are happy with our service, please leave a
+                        </h3>
+                        <h3>positive <span>5-star feedback</span></h3>
+
+
+                        <div class="star-content-top-warp">
+                            <div class="star-content-warp">
+                                <div class="star">
+                                    <p><strong> Item as Described</strong></p>
+                                </div>
+                                <div class="star-icons">
+                                    <img src="https://i.ibb.co/Qc8ndz6/fivestar.png" alt="five_star">
+                                </div>
+                                <div class="five-star">
+                                    <p><strong> 5 star</strong></p>
+                                </div>
+                            </div>
+                            <div class="star-content-warp">
+                                <div class="star">
+                                    <p><strong> Communication</strong></p>
+                                </div>
+                                <div class="star-icons">
+                                    <img src="https://i.ibb.co/Qc8ndz6/fivestar.png" alt="five_star">
+                                </div>
+                                <div class="five-star">
+                                    <p><strong> 5 star</strong></p>
+                                </div>
+                            </div>
+                            <div class="star-content-warp">
+                                <div class="star">
+                                    <p><strong> Postage Charge</strong></p>
+                                </div>
+                                <div class="star-icons">
+                                    <img src="https://i.ibb.co/Qc8ndz6/fivestar.png" alt="five_star">
+                                </div>
+                                <div class="five-star">
+                                    <p><strong> 5 star</strong></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="content">
+                            <p>We value all customers feedback and we take it very seriously to help us improve our
+                                products and proceed further with providing outstanding results. Before leaving
+                                feedback if you have any concerns please do not hesitate to contact us via eBay
+                                messages. We will aim to respond to you within 24 hours.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <footer>
+        <p> &copy; COPYRIGHT 2022 <strong>EBAY SELLER CRAFTER MANIA</strong> ALL RIGHTS RESERVED</p>
+    </footer>
+</body>
+
+</html>
